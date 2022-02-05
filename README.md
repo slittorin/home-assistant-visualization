@@ -32,13 +32,8 @@ Configuration of visualizations for my Home Assistant
 #### Design and logic
 
 We want to be able to have the following components:
-- Be able to perform Github push, with possibility to add comment and show the latest status (last line in the log-file for [/config/scripts/github_push.sh](https://github.com/slittorin/home-assistant-config/blob/master/scripts/github_push.sh).
-  - Through the `File Editor` add-on, edit the file [/config/configuration.yaml](https://github.com/slittorin/home-assistant-config/blob/master/configuration.yaml) and add (do not add `shell_command` if already present):
-    ```yaml
-    shell_command:
-       github_push: /config/scripts/github_push.sh "{{ value }}"
-    ```
-  - 
-- Be able to
+- Add Git commit comment.
+- Press to trigger script to perform Git push.
+- Show status for latest run (last row in the logfile).
 
 
