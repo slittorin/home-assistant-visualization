@@ -31,9 +31,10 @@ Configuration of visualizations for my Home Assistant
 
 #### Design and logic
 
-We want to be able to have the following components:
-- Add Git commit comment.
-- Press to trigger script to perform Git push.
-- Show status for latest run (last row in the logfile).
+All the above is included in the [Lovelace UI config file for dashboard: Home Assistant](https://github.com/slittorin/home-assistant-config/blob/master/.storage/lovelace.home_assistant).
 
-
+We want to be able to have the following cards:
+1. Github push:
+   - Add Git commit comment.
+   - Press to trigger script to perform Git push.
+   - Show status for latest run (last row in the logfile).
