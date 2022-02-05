@@ -28,8 +28,8 @@ Configuration of visualizations for my Home Assistant
    - `Title`: Home Assistant
    - `Icon`: mdi:home-assistant
    - `URL`: home-assistant
-In `/config/.storage` add the file according below to `/config/.gitignore`:
-- 
+2. Through terminal, isolate the name of the lovelace-file in `/config/.storage`.
+3. To file [/config/.gitignore](https://github.com/slittorin/home-assistant-config/blob/master/.gitignore), add the the whitelisted file as: `!.storage/lovelace.home_assistant`
 
 #### Design and logic
 
