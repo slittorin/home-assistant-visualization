@@ -4,9 +4,9 @@ Configuration of visualizations for my Home Assistant
 
 ## Table of content
 
-- [Generic information](https://github.com/slittorin/home-assistant-setup#generic-information)
-- [Governing principles](https://github.com/slittorin/home-assistant-setup#generic-information)
-- [Dashboard - Home Assistant](https://github.com/slittorin/home-assistant-setup#generic-information)
+- [Generic information](https://github.com/slittorin/home-assistant-visualization#generic-information)
+- [Governing principles](https://github.com/slittorin/home-assistant-visualization#governing-principles)
+- [Dashboard - Home Assistant](https://github.com/slittorin/home-assistant-visualization#dashboard---home-assistant)
 
 ## Generic information
 
@@ -22,7 +22,25 @@ Configuration of visualizations for my Home Assistant
 
 ## Dashboard - Home Assistant
 
+#### Setup
+
+1. Create dashboard in the UI with:
+   - `Title`: Home Assistant
+   - `Icon`: mdi:home-assistant
+   - `URL`: home-assistant
+In `/config/.storage` add the file according below to `/config/.gitignore`:
+- 
+
 #### Design and logic
 
 We want to be able to have the following components:
-- 
+- Be able to perform Github push, with possibility to add comment and show the latest status (last line in the log-file for [/config/scripts/github_push.sh](https://github.com/slittorin/home-assistant-config/blob/master/scripts/github_push.sh).
+  - Through the `File Editor` add-on, edit the file [/config/configuration.yaml](https://github.com/slittorin/home-assistant-config/blob/master/configuration.yaml) and add (do not add `shell_command` if already present):
+    ```yaml
+    shell_command:
+       github_push: /config/scripts/github_push.sh "{{ value }}"
+    ```
+  - 
+- Be able to
+
+
