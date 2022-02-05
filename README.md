@@ -18,7 +18,7 @@ Configuration of visualizations for my Home Assistant
 
 - We want to run the Dashboard-setup in UI mode, but be able to push the configuration files to Github. This to keep the setup as standard as possible, but obtain the possibility to store the dashboards in Github.
   - As the lovelace files are by default stored in the `/config/.storage` directory that is by default ignored in `/config/.gitignore`.
-    - We need to add the yaml-files for the dashboard manually as whitelisted in `/config/.gitignore`.
+    - We need to add to `/config/.gitignore` so that all lovelace-files are added to Github (see also [Github Push in Configuration](https://github.com/slittorin/home-assistant-configuration/blob/main/README.md#github-push).
 
 ## Dashboard - Home Assistant
 
@@ -28,8 +28,6 @@ Configuration of visualizations for my Home Assistant
    - `Title`: Home Assistant
    - `Icon`: mdi:home-assistant
    - `URL`: home-assistant
-2. Through terminal, isolate the name of the lovelace-file in `/config/.storage`.
-3. To file [/config/.gitignore](https://github.com/slittorin/home-assistant-config/blob/master/.gitignore), add the the whitelisted file as: `!.storage/lovelace.home_assistant`
 
 #### Design and logic
 
