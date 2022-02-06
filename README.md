@@ -8,6 +8,7 @@ Configuration of visualizations for my Home Assistant
 - [Governing principles](https://github.com/slittorin/home-assistant-visualization#governing-principles)
 - [Dashboard - Home Assistant](https://github.com/slittorin/home-assistant-visualization#dashboard---home-assistant)
   - [Github push](https://github.com/slittorin/home-assistant-visualization#github-push)
+  - [Size of recorder database and tables](https://github.com/slittorin/home-assistant-visualization#size-of-recorder-database-and-tables)
 
 ## Generic information
 
