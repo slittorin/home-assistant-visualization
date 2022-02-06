@@ -9,6 +9,7 @@ Configuration of visualizations for my Home Assistant
 - [Dashboard - Home Assistant](https://github.com/slittorin/home-assistant-visualization#dashboard---home-assistant)
   - [Github push](https://github.com/slittorin/home-assistant-visualization#github-push)
   - [Size of recorder database and tables](https://github.com/slittorin/home-assistant-visualization#size-of-recorder-database-and-tables)
+  - [min(created) date for tables](https://github.com/slittorin/home-assistant-visualization#mincreated-date-for-tables).
 
 ## Generic information
 
@@ -48,7 +49,7 @@ We have the following visual components in an entities card:
 
 ![Recorder database and tables](https://github.com/slittorin/home-assistant-visualization/blob/main/images/recorder_database_and_tables.png)
 
-See also [Home Assistant system - Database and tables data configuration]((https://github.com/slittorin/home-assistant-configuration#package---home-assistant-system---database-and-tables-data).
+See also [Home Assistant system - Database and tables data configuration](https://github.com/slittorin/home-assistant-configuration#package---home-assistant-system---database-and-tables-data).
 
 We have the following visual components in an history graph card :
 - History graph with the following entities:
@@ -59,11 +60,11 @@ We have the following visual components in an history graph card :
     - statistics
     - statistics_short_term
 
-### min(created date) for table
+### min(created date) for tables
 
 ![Min created date](https://github.com/slittorin/home-assistant-visualization/blob/main/images/min_created_date.png)
 
-See also [Home Assistant system - Database and tables data configuration]((https://github.com/slittorin/home-assistant-configuration#package---home-assistant-system---database-and-tables-data).
+See also [Home Assistant system - Database and tables data configuration](https://github.com/slittorin/home-assistant-configuration#package---home-assistant-system---database-and-tables-data).
 
 We have the following visual components in an history graph card :
 - First created data for the main tables:
