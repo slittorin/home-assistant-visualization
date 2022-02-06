@@ -78,7 +78,7 @@ We have the following visual components in an history graph card :
 
 ![Domains and sensors](xxx)
 
-See also [Home Assistant system - Domains and entities configuration]https://github.com/slittorin/home-assistant-configuration/blob/main/README.md#package---home-assistant-system---domains-and-entities).
+See also [Home Assistant system - Domains and entities configuration](https://github.com/slittorin/home-assistant-configuration/blob/main/README.md#package---home-assistant-system---domains-and-entities).
 
 We have the following visual components in an two entities card:
 - Entity card 1:
