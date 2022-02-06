@@ -22,7 +22,7 @@ Configuration of visualizations for my Home Assistant
 
 ## Dashboard - Home Assistant
 
-#### Setup
+### Setup
 
 1. Create dashboard in the UI with:
    - `Title`: Home Assistant
@@ -31,7 +31,7 @@ Configuration of visualizations for my Home Assistant
 
 All the below is included in the [Lovelace UI config file for dashboard: Home Assistant](https://github.com/slittorin/home-assistant-config/blob/master/.storage/lovelace.home_assistant).
 
-#### Github push.
+### Github push.
 
 ![Github push](https://github.com/slittorin/home-assistant-visualization/blob/main/images/push_to_github.png)
 
