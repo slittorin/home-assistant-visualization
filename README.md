@@ -22,19 +22,24 @@ Configuration of visualizations for my Home Assistant
 
 ## Dashboard - Home Assistant
 
-#### Setup
+### Setup
 
 1. Create dashboard in the UI with:
    - `Title`: Home Assistant
    - `Icon`: mdi:home-assistant
    - `URL`: home-assistant
 
+All the below is included in the [Lovelace UI config file for dashboard: Home Assistant](https://github.com/slittorin/home-assistant-config/blob/master/.storage/lovelace.home_assistant).
+
 #### Design and logic
 
-All the above is included in the [Lovelace UI config file for dashboard: Home Assistant](https://github.com/slittorin/home-assistant-config/blob/master/.storage/lovelace.home_assistant).
+##### Github push.
 
-We want to be able to have the following cards:
-1. Github push (see [Github Push configuration](https://github.com/slittorin/home-assistant-configuration#github-push).
-   - Add Git commit comment.
-   - Press to trigger script to perform Git push.
-   - Show status for latest run (last row in the logfile).
+![Github push](https://github.com/slittorin/home-assistant-visualization/blob/main/images/push_to_github.png)
+
+See also [Github Push configuration](https://github.com/slittorin/home-assistant-configuration#github-push).
+
+We have the following visual components:
+- Add Git commit comment.
+- Press to trigger script to perform Git push.
+- Show status for latest run (last row in the logfile).
