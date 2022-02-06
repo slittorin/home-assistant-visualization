@@ -10,6 +10,7 @@ Configuration of visualizations for my Home Assistant
   - [Github push](https://github.com/slittorin/home-assistant-visualization#github-push)
   - [Size of recorder database and tables](https://github.com/slittorin/home-assistant-visualization#size-of-recorder-database-and-tables)
   - [min(created) date for tables](https://github.com/slittorin/home-assistant-visualization#mincreated-date-for-tables)
+  - [Number of domains and entities](https://github.com/slittorin/home-assistant-visualization#number-of-domains-and-entities).
 
 ## Generic information
 
@@ -77,5 +78,10 @@ We have the following visual components in an history graph card :
 
 ![Domains and sensors](xxx)
 
-See also [Home Assistant system - Database and tables data configuration](https://github.com/slittorin/home-assistant-configuration#package---home-assistant-system---database-and-tables-data).
+See also [Home Assistant system - Domains and entities configuration]https://github.com/slittorin/home-assistant-configuration/blob/main/README.md#package---home-assistant-system---domains-and-entities).
 
+We have the following visual components in an entities card:
+- Number of all domains.
+- List of all domains.
+- Number of entities.
+- Number of entities per domain.
