@@ -46,7 +46,7 @@ We have the following visual components in an entities card:
 
 ![Recorder database and tables](https://github.com/slittorin/home-assistant-visualization/blob/main/images/recorder_database_and_tables.png)
 
-See also [Github Push configuration](https://github.com/slittorin/home-assistant-configuration#github-push).
+See also [Home Assistant system - Database and tables data configuration]((https://github.com/slittorin/home-assistant-configuration#package---home-assistant-system---database-and-tables-data).
 
 We have the following visual components in an history graph card :
 - History graph with the following entities:
@@ -56,3 +56,16 @@ We have the following visual components in an history graph card :
     - events
     - statistics
     - statistics_short_term
+
+### min(created date) for table
+
+![Min created date](https://github.com/slittorin/home-assistant-visualization/blob/main/images/min_created_date.png)
+
+See also [Home Assistant system - Database and tables data configuration]((https://github.com/slittorin/home-assistant-configuration#package---home-assistant-system---database-and-tables-data).
+
+We have the following visual components in an history graph card :
+- First created data for the main tables:
+  - states
+  - events
+  - statistics
+  - statistics_short_term
