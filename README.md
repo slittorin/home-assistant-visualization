@@ -16,6 +16,7 @@ Configuration of visualizations for my Home Assistant
 
 - [Home Assistant standard Colors](https://github.com/home-assistant/core/blob/dev/homeassistant/util/color.py).
 - [Home Assistant standard Graph Colors](https://github.com/home-assistant/frontend/blob/dev/src/common/color/colors.ts).
+  - Used in index order by HA.
 
 ## Governing principles
 
