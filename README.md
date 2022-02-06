@@ -7,6 +7,7 @@ Configuration of visualizations for my Home Assistant
 - [Generic information](https://github.com/slittorin/home-assistant-visualization#generic-information)
 - [Governing principles](https://github.com/slittorin/home-assistant-visualization#governing-principles)
 - [Dashboard - Home Assistant](https://github.com/slittorin/home-assistant-visualization#dashboard---home-assistant)
+  - [Github push](https://github.com/slittorin/home-assistant-visualization#github-push)
 
 ## Generic information
 
