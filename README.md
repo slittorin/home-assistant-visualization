@@ -72,3 +72,10 @@ We have the following visual components in an history graph card :
   - events
   - statistics
   - statistics_short_term
+
+### Number of domains and entities
+
+![Domains and sensors](xxx)
+
+See also [Home Assistant system - Database and tables data configuration](https://github.com/slittorin/home-assistant-configuration#package---home-assistant-system---database-and-tables-data).
+
