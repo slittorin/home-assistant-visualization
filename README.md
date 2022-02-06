@@ -37,7 +37,22 @@ All the below is included in the [Lovelace UI config file for dashboard: Home As
 
 See also [Github Push configuration](https://github.com/slittorin/home-assistant-configuration#github-push).
 
-We have the following visual components:
+We have the following visual components in an entities card:
 - Add Git commit comment.
 - Press to trigger script to perform Git push.
 - Show status for latest run (last row in the logfile).
+
+### Size of recorder database and tables
+
+![Recorder database and tables](https://github.com/slittorin/home-assistant-visualization/blob/main/images/recorder_database_and_tables.png)
+
+See also [Github Push configuration](https://github.com/slittorin/home-assistant-configuration#github-push).
+
+We have the following visual components in an history graph card :
+- History graph with the following entities:
+  - Full recorder database size.
+  - Size of the main tables:
+    - states
+    - events
+    - statistics
+    - statistics_short_term
