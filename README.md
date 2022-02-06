@@ -80,8 +80,10 @@ We have the following visual components in an history graph card :
 
 See also [Home Assistant system - Domains and entities configuration]https://github.com/slittorin/home-assistant-configuration/blob/main/README.md#package---home-assistant-system---domains-and-entities).
 
-We have the following visual components in an entities card:
-- Number of all domains.
-- List of all domains.
-- Number of entities.
-- Number of entities per domain.
+We have the following visual components in an two entities card:
+- Entity card 1:
+  - List of all domains.
+- Entity card 2:
+  - Number of all domains.
+  - Number of entities.
+  - Number of entities per domain.
