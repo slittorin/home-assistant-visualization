@@ -78,14 +78,17 @@ We have the following visual components in an history graph card :
 
 ### Number of domains and entities
 
-![Domains and sensors](xxx)
+![Domains used](https://github.com/slittorin/home-assistant-visualization/blob/main/images/domains_used.png)
+![Domains and entities](https://github.com/slittorin/home-assistant-visualization/blob/main/images/domains_entities.png)
 
 See also [Home Assistant system - Domains and entities configuration](https://github.com/slittorin/home-assistant-configuration/blob/main/README.md#package---home-assistant-system---domains-and-entities).
 
+Note that we need to add senors manually for domains that are not present, see [Regular maintenance - Add domain sensors](https://github.com/slittorin/home-assistant-maintenance#add-domain-sensors).
+
 We have the following visual components in an two entities card:
 - Entity card 1:
-  - List of all domains.
+  - List of all current domains.
 - Entity card 2:
-  - Number of all domains.
-  - Number of entities.
+  - Number of all current domains.
+  - Number of current entities.
   - Number of entities per domain.
