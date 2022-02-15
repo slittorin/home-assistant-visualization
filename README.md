@@ -22,6 +22,7 @@ Configuration of visualizations for my Home Assistant
 
 #### Generic
 
+- See [Govering principles in Setup](https://github.com/slittorin/home-assistant-setup#governing-principles) for the capabilities setup for databases, retention and visualization. 
 - We want to run the Dashboard-setup in UI mode, but be able to push the configuration files to Github. This to keep the setup as standard as possible, but obtain the possibility to store the dashboards in Github.
   - As the lovelace files are by default stored in the `/config/.storage` directory that is by default ignored in `/config/.gitignore`.
     - We need to add to `/config/.gitignore` so that all lovelace-files are added to Github (see also [Github Push in Configuration](https://github.com/slittorin/home-assistant-configuration/blob/main/README.md#github-push).
