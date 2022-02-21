@@ -17,6 +17,10 @@ Configuration of visualizations for my Home Assistant
 - [Home Assistant standard Colors](https://github.com/home-assistant/core/blob/dev/homeassistant/util/color.py).
 - [Home Assistant standard Graph Colors](https://github.com/home-assistant/frontend/blob/dev/src/common/color/colors.ts).
   - Used in index order by HA.
+- For Grafana ([from Dummy labs](https://dummylabs.com/post/2019-01-13-influxdb-part1/)):
+  - Light theme add `&theme=light` to Grafana url.
+  - Refresh interval add `&refresh=1m` to Grafana url ([time range controls](https://grafana.com/docs/grafana/latest/dashboards/time-range-controls/)).
+  - Time intervals `&from=now-8h&to=now` to Grafana url (remember to set Override relative time).
 
 ## Governing principles
 
@@ -55,7 +59,7 @@ We have the following visual components in an entities card:
 
 See also [Home Assistant system - Database and tables data configuration](https://github.com/slittorin/home-assistant-configuration#package---home-assistant-system---database-and-tables-data).
 
-We have the following visual components in an history graph card :
+We have the following visual components in an history graph card:
 - History graph with the following entities:
   - Full recorder database size.
   - Size of the main tables:
