@@ -37,7 +37,7 @@ Configuration of visualizations for my Home Assistant
       |> range(start: v.timeRangeStart, stop: v.timeRangeStop)
       |> filter(fn: (r) => r["entity_id"] == "electrical_consumption_intake_cost_hour")
       |> filter(fn: (r) => r["_field"] == "value")
-      |> aggregateWindow(every: 1h, fn: last, createEmpty: true)
+      |> aggregateWindow(every: 1h, fn: last)
       |> max()
     ```
   - Got values over time, with field-name and aggregated data in 2h intervals, and span empty data:
