@@ -17,12 +17,20 @@ Configuration of visualizations for my Home Assistant
 - [Home Assistant standard Colors](https://github.com/home-assistant/core/blob/dev/homeassistant/util/color.py).
 - [Home Assistant standard Graph Colors](https://github.com/home-assistant/frontend/blob/dev/src/common/color/colors.ts).
   - Used in index order by HA.
-- For Grafana ([from Dummy labs](https://dummylabs.com/post/2019-01-13-influxdb-part1/)):
+- For Grafana (Inspire from [from Dummy labs](https://dummylabs.com/post/2019-01-13-influxdb-part1/) and others):
   - Light theme add `&theme=light` to Grafana url.
   - Refresh interval add `&refresh=1m` to Grafana url ([time range controls](https://grafana.com/docs/grafana/latest/dashboards/time-range-controls/)).
   - Time intervals `&from=now-8h&to=now` to Grafana url (remember to set Override relative time).
   - For Dashboards. Kiosk mode `&kiosk=tv` to Grafana url.
   - For Bar charts in Grafana, [Convert time series to string](https://community.grafana.com/t/grafana-8-bar-chart-not-working-with-time-base-labels/50062).
+  - Get sum over time:
+  ```flux
+  from(bucket: "ha")
+    |> range(start: v.timeRangeStart, stop: v.timeRangeStop)
+    |> filter(fn: (r) => r["entity_id"] == "electrical_consumption_intake_cost_hour")
+    |> filter(fn: (r) => r["_field"] == "value")
+    |> cumulativeSum()
+  ```
 - Heights for card can be set with Card Mod:
   ```yaml
   card_mod:
