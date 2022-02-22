@@ -21,7 +21,8 @@ Configuration of visualizations for my Home Assistant
   - Light theme add `&theme=light` to Grafana url.
   - Refresh interval add `&refresh=1m` to Grafana url ([time range controls](https://grafana.com/docs/grafana/latest/dashboards/time-range-controls/)).
   - Time intervals `&from=now-8h&to=now` to Grafana url (remember to set Override relative time).
-  - For dasboards. Kiosk mode `&kiosk=tv` to Grafana url.
+  - For Dashboards. Kiosk mode `&kiosk=tv` to Grafana url.
+  - For Bar charts in Grafana, [Convert time series to string](https://community.grafana.com/t/grafana-8-bar-chart-not-working-with-time-base-labels/50062).
 - Heights for card can be set with Card Mod:
   ```yaml
   card_mod:
