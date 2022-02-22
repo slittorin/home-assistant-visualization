@@ -56,9 +56,9 @@ Configuration of visualizations for my Home Assistant
     ```
   - InfluxDB date/time ranges can be set with a variable:
     ```flux
-    month = date.truncate(t: now(), unit: 1mo)
+    month_start = date.truncate(t: now(), unit: 1mo)
     from(bucket: "ha")
-      |> range(start: v.timeRangeStart, stop: now())
+      |> range(start: month_start, stop: now())
     ```
 - Heights for card can be set with Card Mod:
   ```yaml
