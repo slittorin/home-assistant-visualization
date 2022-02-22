@@ -23,6 +23,7 @@ Configuration of visualizations for my Home Assistant
   - Time intervals `&from=now-8h&to=now` to Grafana url (remember to set Override relative time).
   - For Dashboards. Kiosk mode `&kiosk=tv` to Grafana url.
   - For Bar charts in Grafana, [Convert time series to string](https://community.grafana.com/t/grafana-8-bar-chart-not-working-with-time-base-labels/50062).
+- For Grafana and InfluxDB 2 flux language:
   - Get sum over time:
     ```flux
     from(bucket: "ha")
