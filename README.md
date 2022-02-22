@@ -31,12 +31,13 @@ Configuration of visualizations for my Home Assistant
       |> filter(fn: (r) => r["_field"] == "value")
       |> cumulativeSum()
     ```
-  - Get max value over time (min and mean can also be used):
+  - Get max value over time, with aggregated data over 1h (min and mean can also be used):
     ```flux
     from(bucket: "ha")
       |> range(start: v.timeRangeStart, stop: v.timeRangeStop)
       |> filter(fn: (r) => r["entity_id"] == "electrical_consumption_intake_cost_hour")
       |> filter(fn: (r) => r["_field"] == "value")
+      |> aggregateWindow(every: 1h, fn: last, createEmpty: true)
       |> max()
     ```
   - Got values over time, with field-name and aggregated data in 2h intervals, and span empty data:
