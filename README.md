@@ -41,7 +41,7 @@ Configuration of visualizations for my Home Assistant
       |> max()
     ```
   - Got values over time, with field-name and aggregated data in 2h intervals, and span empty data:
-   ```flux
+    ```flux
     from(bucket: "ha")
       |> range(start: v.timeRangeStart, stop: v.timeRangeStop)
       |> filter(fn: (r) => r["entity_id"] == "electrical_consumption_intake_cost_hour")
@@ -52,15 +52,13 @@ Configuration of visualizations for my Home Assistant
           _field: "Kostnad",
       }))
       |> aggregateWindow(every: 2h, fn: last, createEmpty: true)
-      ```
-    - InfluxDB date/time ranges can be set with a variable:
-      ```flux
-      month = date.truncate(t: now(), unit: 1mo)
-      from(bucket: "ha")
-        |> range(start: v.timeRangeStart, stop: now())
-     ```
-from(bucket: "piMeter") 
-|> range(start: month)
+    ```
+  - InfluxDB date/time ranges can be set with a variable:
+    ```flux
+    month = date.truncate(t: now(), unit: 1mo)
+    from(bucket: "ha")
+      |> range(start: v.timeRangeStart, stop: now())
+    ```
 - Heights for card can be set with Card Mod:
   ```yaml
   card_mod:
