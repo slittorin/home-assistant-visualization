@@ -24,13 +24,34 @@ Configuration of visualizations for my Home Assistant
   - For Dashboards. Kiosk mode `&kiosk=tv` to Grafana url.
   - For Bar charts in Grafana, [Convert time series to string](https://community.grafana.com/t/grafana-8-bar-chart-not-working-with-time-base-labels/50062).
   - Get sum over time:
-  ```flux
-  from(bucket: "ha")
-    |> range(start: v.timeRangeStart, stop: v.timeRangeStop)
-    |> filter(fn: (r) => r["entity_id"] == "electrical_consumption_intake_cost_hour")
-    |> filter(fn: (r) => r["_field"] == "value")
-    |> cumulativeSum()
-  ```
+    ```flux
+    from(bucket: "ha")
+      |> range(start: v.timeRangeStart, stop: v.timeRangeStop)
+      |> filter(fn: (r) => r["entity_id"] == "electrical_consumption_intake_cost_hour")
+      |> filter(fn: (r) => r["_field"] == "value")
+      |> cumulativeSum()
+    ```
+  - Get max value over time (min and mean can also be used):
+    ```flux
+    from(bucket: "ha")
+      |> range(start: v.timeRangeStart, stop: v.timeRangeStop)
+      |> filter(fn: (r) => r["entity_id"] == "electrical_consumption_intake_cost_hour")
+      |> filter(fn: (r) => r["_field"] == "value")
+      |> max()
+    ```
+  - Got values over time, with field-name and aggregated data in 2h intervals, and span empty data:
+   ```flux
+    from(bucket: "ha")
+      |> range(start: v.timeRangeStart, stop: v.timeRangeStop)
+      |> filter(fn: (r) => r["entity_id"] == "electrical_consumption_intake_cost_hour")
+      |> filter(fn: (r) => r["_field"] == "value")
+      |> map(fn: (r) => ({
+          _value: r._value,
+          _time: r._time,
+          _field: "Kostnad",
+      }))
+      |> aggregateWindow(every: 2h, fn: last, createEmpty: true)
+      ```
 - Heights for card can be set with Card Mod:
   ```yaml
   card_mod:
