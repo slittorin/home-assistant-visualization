@@ -39,10 +39,10 @@ Configuration of visualizations for my Home Assistant
       |> range(start: v.timeRangeStart, stop: v.timeRangeStop)
       |> filter(fn: (r) => r["entity_id"] == "electrical_consumption_intake_cost_hour")
       |> filter(fn: (r) => r["_field"] == "value")
-      |> aggregateWindow(every: 1h, fn: last)
+      |> aggregateWindow(every: 1h, fn: sum)
       |> max()
     ```
-  - Got values over time, with field-name and aggregated data in 2h intervals, and span empty data:
+  - Got sum values over time, with field-name and aggregated data in 2h intervals, and span empty data:
     ```flux
     from(bucket: "ha")
       |> range(start: v.timeRangeStart, stop: v.timeRangeStop)
@@ -53,7 +53,7 @@ Configuration of visualizations for my Home Assistant
           _time: r._time,
           _field: "Kostnad",
       }))
-      |> aggregateWindow(every: 2h, fn: last, createEmpty: true)
+      |> aggregateWindow(every: 2h, fn: sum, createEmpty: true)
     ```
 - Heights for card can be set with Card Mod:
   ```yaml
