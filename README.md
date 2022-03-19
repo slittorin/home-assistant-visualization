@@ -95,6 +95,16 @@ We have the following visual components in an entities card:
 - Press to trigger script to perform Git push.
 - Show status for latest run (last row in the logfile).
 
+### Copy to server1
+
+![Github copy files to server1](https://github.com/slittorin/home-assistant-visualization/blob/main/images/copy_backup.png)
+
+See also [Github Copy files to server1 configuration](https://github.com/slittorin/home-assistant-configuration#copy-backup-files-to-server1).
+
+We have the following visual components in an entities card:
+- Press to trigger script to perform copy of files.
+- Show status for latest run (last row in the logfile).
+
 ### Size of recorder database and tables
 
 ![Recorder database and tables](https://github.com/slittorin/home-assistant-visualization/blob/main/images/recorder_database_and_tables.png)
