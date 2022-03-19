@@ -105,7 +105,7 @@ We have the following visual components in an entities card:
 - Press to trigger script to perform copy of files.
 - Show status for latest run (last row in the logfile).
 
-### Grafana Github push.
+### Git for Grafana
 
 ![Grafana Github push](https://github.com/slittorin/home-assistant-visualization/blob/main/images/grafana_github_push.png)
 
