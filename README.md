@@ -8,6 +8,7 @@ Configuration of visualizations for my Home Assistant
 - [Governing principles](https://github.com/slittorin/home-assistant-visualization#governing-principles)
 - [Dashboard - Home Assistant](https://github.com/slittorin/home-assistant-visualization#dashboard---home-assistant)
   - [Github push](https://github.com/slittorin/home-assistant-visualization#github-push)
+  - [Copy backup to server1](https://github.com/slittorin/home-assistant-visualization#copy-backup-to-server1).
   - [Git for Grafana](https://github.com/slittorin/home-assistant-visualization#git-for-grafana)
   - [Size of recorder database and tables](https://github.com/slittorin/home-assistant-visualization#size-of-recorder-database-and-tables)
   - [min(created) date for tables](https://github.com/slittorin/home-assistant-visualization#mincreated-date-for-tables)
@@ -98,7 +99,7 @@ We have the following visual components in an entities card:
 - Press to trigger script to perform Git push.
 - Show status for latest run (last row in the logfile).
 
-### Copy to server1
+### Copy backup to server1
 
 ![Github copy files to server1](https://github.com/slittorin/home-assistant-visualization/blob/main/images/copy_backup.png)
 
