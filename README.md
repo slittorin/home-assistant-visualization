@@ -164,15 +164,12 @@ We have the following visual components in an two entities card:
 
 ### InfluxDB database size
 
-![Domains and entities](https://github.com/slittorin/home-assistant-visualization/blob/main/images/domains_entities.png)
+![InfluxDB size](https://github.com/slittorin/home-assistant-visualization/blob/main/images/influxdb_size.png)
 
 See also [Home Assistant system - InfluxDB size configuration](https://github.com/slittorin/home-assistant-configuration#package---home-assistant-system---influxdb-size).
 
+We add a history card to get the last months increase in size.
 
-We have the following visual components in an two entities card:
-- Entity card 1:
-  - List of all current domains.
-- Entity card 2:
-  - Number of all current domains.
-  - Number of current entities.
-  - Number of entities per domain.
+## Dashboard - Infrastructure
+
+
