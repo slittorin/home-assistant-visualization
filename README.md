@@ -105,6 +105,17 @@ We have the following visual components in an entities card:
 - Press to trigger script to perform copy of files.
 - Show status for latest run (last row in the logfile).
 
+### Grafana Github push.
+
+![Grafana Github push](https://github.com/slittorin/home-assistant-visualization/blob/main/images/grafana_github_push.png)
+
+See also [Git for Grafana configuration](https://github.com/slittorin/home-assistant-setup#git-for-grafanah).
+
+We have the following visual components in an entities card:
+- Add Git commit comment.
+- Press to trigger script to perform Git push.
+- Show status for latest run (last row in the logfile).
+
 ### Size of recorder database and tables
 
 ![Recorder database and tables](https://github.com/slittorin/home-assistant-visualization/blob/main/images/recorder_database_and_tables.png)
