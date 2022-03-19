@@ -12,6 +12,8 @@ Configuration of visualizations for my Home Assistant
   - [Size of recorder database and tables](https://github.com/slittorin/home-assistant-visualization#size-of-recorder-database-and-tables)
   - [min(created) date for tables](https://github.com/slittorin/home-assistant-visualization#mincreated-date-for-tables)
   - [Number of domains and entities](https://github.com/slittorin/home-assistant-visualization#number-of-domains-and-entities).
+  - [InfluxDB size](https://github.com/slittorin/home-assistant-visualization/blob/main/README.md#influxdb-database-size).
+- [Dashboard - Infrastructure](https://github.com/slittorin/home-assistant-visualization/blob/main/README.md#dashboard---infrastructure)
 
 ## Generic information
 
