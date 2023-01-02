@@ -59,6 +59,24 @@ Configuration of visualizations for my Home Assistant
       }))
       |> aggregateWindow(every: 2h, fn: sum, createEmpty: true)
     ```
+    - Aggregate data, to reduce number of data points, in this case we also take only the last value of the hour:
+    ```flux
+       |> aggregateWindow(every: 1h, fn: last)
+       |> aggregateWindow(every: 1d, fn: max)
+       |> aggregateWindow(every: 1mo, fn: max)
+       |> max()
+    ```
+    - Utilize data from two sensors, in this case we added downsampling to hourly states to keep down data volume (the sensor data do not overlap in time):
+    ```flux
+    from(bucket: "ha")
+      |> range(start: v.timeRangeStart, stop: v.timeRangeStop)
+      |> filter(fn: (r) => r["entity_id"] == "grid_power" or r["entity_id"] == "sma_grid_power_max_hour")
+      |> filter(fn: (r) => r["_field"] == "value")
+      |> group(columns: ["_field"], mode:"by")
+      |> aggregateWindow(every: 1h, fn: max)
+      |> aggregateWindow(every: 1d, fn: max)
+      |> max()
+    ```
 - Heights for card can be set with Card Mod:
   ```yaml
   card_mod:
