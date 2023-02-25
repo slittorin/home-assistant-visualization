@@ -77,6 +77,23 @@ Configuration of visualizations for my Home Assistant
       |> aggregateWindow(every: 1d, fn: max)
       |> max()
     ```
+    - Get last (or first) data-point:
+    ```flux
+    from(bucket: "ha")
+      |> range(start: 2022-01-01T00:00:00.000Z, stop: 2023-04-01T23:59:59.999999Z)
+      |> filter(fn: (r) => r["entity_id"] == "sma_daily_yield_hour")
+      |> filter(fn: (r) => r["_field"] == "value")
+      |> last()
+    ```
+    - Count data-point:
+    ```flux
+    from(bucket: "ha")
+      |> range(start: 2022-01-01T00:00:00.000Z, stop: 2023-04-01T23:59:59.999999Z)
+      |> filter(fn: (r) => r["entity_id"] == "metering_active_power_feed_l3")
+      |> filter(fn: (r) => r["_field"] == "value")
+      |> group()  
+      |> count()
+    ```
 - Heights for card can be set with Card Mod:
   ```yaml
   card_mod:
